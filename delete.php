@@ -1,26 +1,18 @@
 <?php
- 
+require_once "inc.database.php";
 
 if(isset($_POST["submit"])){
-	$id = $_POST["id"];
+	$id = (int)$_POST["id"];
 	
-	if($id != ""){
-          include "inc.database.php";
+	if($id > 0){
         $connectionStatus = connect_db();
         $status = delete_data($connectionStatus, $id);
-			if($status){
-				header("Location: index.php?id=success&v=Deletion was successfull");
-			}else{
-				header("Location: index.php?id=success&v=Error: Incorrect User Id");
-			}
+		if($status){
+			header("Location: index.php?id=success&msg=Deletion was successfull");
+		}else{
+			header("Location: index.php?id=error&msg=Error: Incorrect User Id");
+		}
+	} else {
+		header("Location: index.php?id=error&msg=Error: All fields mandatory");
 	}
-	else {header("location:index.php?id=error&v=Error: All fields mandatory");
-	}
-
-
 }
- else{
-	header("location:index.php");
-}
-
-?>
