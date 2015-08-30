@@ -12,9 +12,9 @@ if(isset($_POST["submit"])){
 		if($status){
 			header("Location: index.php?id=success&msg=Insertion was successfull");
 		} else {
-			header("Location: index.php?id=success&msg=Error: Insertion Error");
+			header("Location: index.php?id=danger&msg=Error: Insertion Error");
 		}
 	} else {
-		header("Location: index.php?id=error&msg=Error: All fields mandatory");
+		header("Location: index.php?id=danger&msg=Error: All fields mandatory");
 	}
 }

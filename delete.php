@@ -10,9 +10,9 @@ if(isset($_POST["submit"])){
 		if($status){
 			header("Location: index.php?id=success&msg=Deletion was successfull");
 		}else{
-			header("Location: index.php?id=error&msg=Error: Incorrect User Id");
+			header("Location: index.php?id=danger&msg=Invalid user ID entered!");
 		}
 	} else {
-		header("Location: index.php?id=error&msg=Error: All fields mandatory");
+		header("Location: index.php?id=danger&msg=All fields mandatory");
 	}
 }
