@@ -65,6 +65,3 @@ function delete_data($connectionStatus, $id){
     }
     return false;
 }
-
-
-?>
