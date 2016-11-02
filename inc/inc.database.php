@@ -1,8 +1,11 @@
 <?php
 
+
 // establish connection with mysql database
 function connect_db(){
-    $connectionStatus = mysqli_connect("localhost", "root", "696163", "basic phpmyadmin");
+    require_once 'config.php';
+    
+    $connectionStatus = mysqli_connect($MYSQL_HOSTNAME, $MYSQL_USERNAME, $MYSQL_PASSWORD, $MYSQL_DATABASE);
     if(!$connectionStatus){
         echo "Error connecting database";
         die;

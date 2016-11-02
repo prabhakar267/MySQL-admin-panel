@@ -1,5 +1,5 @@
 <?php
-require_once "inc.database.php";
+require_once "inc/inc.database.php";
 
 if(isset($_POST["submit"])){
 	$id = (int)$_POST["id"];

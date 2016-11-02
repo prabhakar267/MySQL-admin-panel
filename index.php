@@ -1,5 +1,5 @@
 <?php
-	require_once "inc.database.php";
+	require_once "inc/inc.database.php";
 	$connectionStatus = connect_db();
 ?>
 <!doctype html>
