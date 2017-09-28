@@ -8,5 +8,5 @@ The current example uses a student record having First Name and Last Name of stu
 </ul>
 <hr>
 Screenshots
-![Alt text](http://www.prabhakargupta.com/projects/ss/screencapture-localhost-test-index-php-1440962722309.png "Home Screen")
-![Alt text](http://www.prabhakargupta.com/projects/ss/screencapture-localhost-test-index-php-1440962752918.png "Instructions")
+![Alt tag](http://www.prabhakargupta.com/projects/ss/screencapture-localhost-test-index-php-1440962722309.png "Home Screen")
+![Alt tag](http://www.prabhakargupta.com/projects/ss/screencapture-localhost-test-index-php-1440962752918.png "Instructions")
